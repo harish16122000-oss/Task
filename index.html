@@ -16,15 +16,23 @@
       return element % 2 !== 0;
   })
   
-  document.writeln( "Odd Number= "+ odd +"<br>"+"Even Number= "+ even )
+  document.writeln( "Odd Number= "+ odd +"<br>"+"Even Number= "+ even +"<br>")
   </script>
   <script>
-    let name = ["H", "A", "R", "I", "S", "H", "L", "I", "N", "G", "A", "M",  ]
-    let vowels = name.filter(function(element){
-      return element === "A" || element === "E" || element === "I" || element === "O" || element === "U"
-    })
-     numbers = vowels.length
-    document.writeln("Vowels in my name = "+ vowels +"<br>" + "Total numbers of Vowels in my name: " + numbers)
+
+    let name =  "HARISHLINGAM";
+    let vowels = "AEIOU";
+    var count = 0;
+     document.writeln( "Vowels in my name: ")
+    for(i=0; i<name.length; i++){
+    if (vowels.includes(name[i])){
+      var total = name[i];
+     count++;
+      document.writeln(total )
+     
+    }
+    }
+    document.writeln("<br>"+"Total number of vowels: " + count)
   </script>
 </body>
 </html>
